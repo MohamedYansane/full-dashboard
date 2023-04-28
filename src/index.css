@@ -2,3 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;500;600&family=Nunito:wght@200;400;500;700;800;900&family=Poppins:wght@200;700&family=Roboto+Mono:wght@200;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+@layer base {
+    .main-container {
+        position: relative;
+        min-height: calc(100vh - 43px);
+    }
+    .main-content {
+        position: absolute;
+        width: calc(100% - 210px);
+        background: blue;
+        top: 0;
+        right: 0;
+        height: 100%;
+        overflow-y: scroll;
+    }
+}
+
+@layer components {
+    .main-container {
+        @apply w-full;
+    }
+}
