@@ -1,5 +1,5 @@
 import "./navbar.scss";
 
-export const Navbar = () => {
-  return <div>Navbar</div>;
+export const Navbar = ({ icon }) => {
+  return <>{icon}</>;
 };
