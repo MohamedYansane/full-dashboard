@@ -16,16 +16,25 @@
     }
     .main-content {
         position: absolute;
+        display: flex;
+        flex-direction: column;
         width: calc(100% - 210px);
         top: 0;
         right: 0;
         height: 100%;
         overflow-y: scroll;
+        background-color: #fdfeff
     }
 }
 
 @layer components {
     .main-container {
         @apply w-full;
+    }
+    .widget-card,
+    .chart,
+    .feature,
+    .list-container {
+        @apply bg-white;
     }
 }

@@ -51,9 +51,9 @@ export const Widgets = ({ type, rgb }) => {
   }
   return (
     <>
-      <div className="widget-card shadow-lg rounded-md">
+      <div className="widget-card shadow-lg rounded-md ">
         <div className="left">
-          <span className="title">"{data.title}</span>
+          <span className="title">{data.title}</span>
           <span className="count-title">
             {data.isMoney && "$"} {amount}
           </span>
