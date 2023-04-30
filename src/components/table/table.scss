@@ -1,0 +1,25 @@
+.table-content {
+    .cellWrapper {
+        display: flex;
+        align-items: center;
+        .image {
+            width: 32px;
+            height: 32px;
+        }
+    }
+    .status {
+        padding: 4px;
+        color: #fff;
+        width: 71px !important;
+        text-align: center;
+        &.Approved {
+            background-color: #4ade80;
+        }
+        &.Pending {
+            background-color: #facc15;
+        }
+        &.Rejected {
+            background-color: #f87171;
+        }
+    }
+}
