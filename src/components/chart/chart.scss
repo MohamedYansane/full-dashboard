@@ -1,0 +1,13 @@
+.chart {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    // c'est l'equivalent de width mais avec le flex c'est responsive
+    width: 67%;
+    padding: 10px;
+    height: fit-content;
+    color: gray;
+    .chart-grid {
+        stroke: #e3e9ec;
+    }
+}
