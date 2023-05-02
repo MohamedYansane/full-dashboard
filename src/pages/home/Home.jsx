@@ -23,7 +23,7 @@ export const Home = () => {
           {/**Beginning of chart content */}
           <div className="charts w-full ">
             <Feature />
-            <Chart />
+            <Chart aspect={2 / 1} title="Last 6 Months (income)" />
           </div>
           {/**End of chart content */}
           {/**Beginning of transaction data (table) */}{" "}

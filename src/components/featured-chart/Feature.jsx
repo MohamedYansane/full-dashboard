@@ -8,7 +8,7 @@ import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 export const Feature = () => {
   return (
-    <div className="feature shadow-lg rounded-md ">
+    <div className="feature shadow-lg rounded-md bg-w">
       <div className="top">
         <h1 className="title">Total Revenue</h1>
         <MoreVertOutlined fontSize="small" />

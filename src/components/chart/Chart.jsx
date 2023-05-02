@@ -8,7 +8,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-export const Chart = () => {
+export const Chart = ({ aspect, title }) => {
   const data = [
     {
       month: "January",
@@ -38,11 +38,11 @@ export const Chart = () => {
 
   return (
     <div className="chart shadow-lg rounded-md">
-      <div className="last-six-month">Last 6 months revenues</div>
+      <div className="last-six-month">{title}</div>
       {/**instead of giving height i'm gonna give an aspect which is a half
        * of width  aspect={2 / 1} half of width
        */}
-      <ResponsiveContainer min-width="67%" height={360}>
+      <ResponsiveContainer min-width="100%" aspect={aspect}>
         <AreaChart
           width="67%"
           height={230}
